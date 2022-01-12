@@ -1,0 +1,26 @@
+:root {
+  /*LIGHT MODE */
+
+  --elements: hsl(0, 0%, 100%);
+  --background: hsl(0, 0%, 98%);
+  --text: hsl(200, 15%, 8%);
+  --input: hsl(0, 0%, 52%);
+
+  --fs-home: 0.875rem;
+  --fs-detail: 1rem;
+
+  --ff-default: "Nunito Sans", sans-serif;
+
+  --fw-100: 300;
+  --fw-200: 600;
+  --fw-300: 800;
+}
+
+[data-theme="dark"] {
+  /*DARK MODE */
+
+  --elements: hsl(209, 23%, 22%);
+  --background: hsl(207, 26%, 17%);
+  --text: hsl(0, 0%, 100%);
+  --input: hsl(0, 0%, 52%);
+}

@@ -1,0 +1,31 @@
+.search-bar {
+  margin: 3rem 1rem;
+  padding: 1.3rem;
+  background: var(--elements);
+  color: var(--text);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.search__input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.search__input:focus {
+  outline: none;
+}
+
+.search__button {
+  border: none;
+  background: var(--white);
+  font-size: 1rem;
+  color: var(--text);
+  padding: 0 2rem;
+  font-size: 1.4rem;
+}

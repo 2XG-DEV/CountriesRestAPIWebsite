@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>COUNTRIES API FE</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__container">
+        <h1>Where in the world?</h1>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <div class="search__form">
+      <div class="search-bar">
+        <button
+          type="button"
+          class="search__button"
+          onclick="searchCountries()"
+        >
+          <i class="fa fa-search"></i>
+        </button>
+        <input
+          class="search__input"
+          type="text"
+          placeholder="Search for a country..."
+          name="search"
+          id="input"
+          autocomplete="off"
+        />
+      </div>
+      <div class="select-container">
+        <select id="continents" name="continents" onchange="changeArea()">
+          <option value="All">All</option>
+          <option value="Africa">Africa</option>
+          <option value="Americas">Americas</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="Oceania">Oceania</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="countries-list" id="list">
+      <!-- <div class="country-container">
+        <div class="country__img">
+          <img src="./flax.png" alt="" />
+        </div>
+        <div class="country__description">
+          <h2 class="country__name">Germany</h2>
+          <p>Population: <span class="value-pop">81,770,900</span></p>
+          <p>Region: <span class="value-reg">Europe</span></p>
+          <p>Capital: <span class="value-cap">Berlin</span></p>
+        </div>
+      </div> -->
+    </div>
+
+    <script src="./require.js"></script>
+    <script src="./darkModeSwitch.js"></script>
+    <script src="./populateOnLoad.js"></script>
+  </body>
+</html>

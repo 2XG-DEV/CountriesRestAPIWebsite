@@ -1,0 +1,19 @@
+body {
+  font-size: var(--fs-home);
+  font-family: var(--ff-default);
+  font-weight: var(--fw-100);
+  color: var(--text);
+  background-color: var(--background);
+}
+
+a {
+  text-decoration: none;
+}
+
+.countries-list {
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  align-items: stretch;
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+}
