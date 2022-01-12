@@ -43,20 +43,20 @@ function changeArea() {
 
   list.innerHTML = filteredCountries
     .map((country) => {
-      return `<div class="country-container ${country.name.region}">
-        <div className="country-wrapper">
-            <div class="country__img">
-              <img src="${country.flags.png}" alt="" />
-            </div>
-            <div class="country__description">
-              <h2 class="country__name">${country.name.common}</h2>
-              <p>Population: <span class="value-pop">${country.population}</span></p>
-              <p>Region: <span class="value-reg">${country.region}</span></p>
-              <p>Capital: <span class="value-cap">${country.capital}</span></p>
-            </div>
-        </div>
+      return `<a href="./country.html?name=${country.name.common}" class="country-container">
+      <div className="country-wrapper">
+          <div class="country__img">
+            <img src="${country.flags.png}" alt="" />
+          </div>
+          <div class="country__description">
+            <h2 class="country__name">${country.name.common}</h2>
+            <p>Population: <span class="value-pop">${country.population}</span></p>
+            <p>Region: <span class="value-reg">${country.region}</span></p>
+            <p>Capital: <span class="value-cap">${country.capital}</span></p>
+          </div>
       </div>
-      `;
+    </a>
+    `;
     })
     .join(" ");
 }
@@ -76,20 +76,20 @@ function searchCountries() {
 
   list.innerHTML = filteredCountries
     .map((country) => {
-      return `<div class="country-container ${country.name.region}">
-            <div className="country-wrapper">
-                <div class="country__img">
-                  <img src="${country.flags.png}" alt="" />
-                </div>
-                <div class="country__description">
-                  <h2 class="country__name">${country.name.common}</h2>
-                  <p>Population: <span class="value-pop">${country.population}</span></p>
-                  <p>Region: <span class="value-reg">${country.region}</span></p>
-                  <p>Capital: <span class="value-cap">${country.capital}</span></p>
-                </div>
-            </div>
+      return `<a href="./country.html?name=${country.name.common}" class="country-container">
+      <div className="country-wrapper">
+          <div class="country__img">
+            <img src="${country.flags.png}" alt="" />
           </div>
-          `;
+          <div class="country__description">
+            <h2 class="country__name">${country.name.common}</h2>
+            <p>Population: <span class="value-pop">${country.population}</span></p>
+            <p>Region: <span class="value-reg">${country.region}</span></p>
+            <p>Capital: <span class="value-cap">${country.capital}</span></p>
+          </div>
+      </div>
+    </a>
+    `;
     })
     .join(" ");
 }
